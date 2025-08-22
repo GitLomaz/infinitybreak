@@ -401,11 +401,11 @@ function submitScore() {
     scene.submitting = true;
     scoreName = extractLetters();
     data = btoa(
-      '{ "name": "' + extractLetters() + '", "score": ' + score + "}"
+      '{ "game": "infinitybreak", "name": "' + extractLetters() + '", "score": ' + score + "}"
     );
     $.ajax({
       type: "POST",
-      url: "https://us-dev.nightscapes.io/pallet/score.php",
+      url: "https://us-dev.nightscapes.io/scores/submitScores.php",
       data: { data: data },
       dataType: "json", // added data type
       success: function (res) {
