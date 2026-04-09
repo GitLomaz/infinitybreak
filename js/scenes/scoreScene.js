@@ -35,10 +35,11 @@ let scoreScene = new Phaser.Class({
       .bitmapText(450, 200, "font", "")
       .setRightAlign();
     $.ajax({
-      url: "https://scores.lomazgames.com/score?game=infinitybreak",
+      url: "https://scores.lomazgames.com/scores?game=infinitybreak",
       type: "GET",
       dataType: "json", // added data type
       success: function (res) {
+        console.log(res);
         populateScores(res.scores);
       },
     });

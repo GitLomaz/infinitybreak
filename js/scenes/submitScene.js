@@ -405,7 +405,7 @@ function submitScore() {
     );
     $.ajax({
       type: "POST",
-      url: "https://scores.lomazgames.com/score",
+      url: "https://scores.lomazgames.com/scores",
       data: { data: data },
       dataType: "json", // added data type
       success: function (res) {
