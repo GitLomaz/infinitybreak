@@ -405,7 +405,7 @@ function submitScore() {
     );
     $.ajax({
       type: "POST",
-      url: "https://us-dev.nightscapes.io/scores/submitScores.php",
+      url: "https://scores.lomazgames.com/score",
       data: { data: data },
       dataType: "json", // added data type
       success: function (res) {

@@ -35,7 +35,7 @@ let scoreScene = new Phaser.Class({
       .bitmapText(450, 200, "font", "")
       .setRightAlign();
     $.ajax({
-      url: "https://us-dev.nightscapes.io/scores/submitScores.php?game=infinitybreak",
+      url: "https://scores.lomazgames.com/score?game=infinitybreak",
       type: "GET",
       dataType: "json", // added data type
       success: function (res) {
